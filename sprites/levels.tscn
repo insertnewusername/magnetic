@@ -1,0 +1,203 @@
+[gd_scene format=3 uid="uid://crdkf33d0xsog"]
+
+[ext_resource type="Script" uid="uid://bifnd1jec4ia1" path="res://scripts/levels.gd" id="1_hq8kx"]
+[ext_resource type="Texture2D" uid="uid://csjuatp8oa5ba" path="res://assets/Gravity Flip.png" id="2_b0532"]
+[ext_resource type="PackedScene" uid="uid://bl1vym7uvdpk1" path="res://sprites/fade_transition.tscn" id="2_dlk6t"]
+[ext_resource type="FontFile" uid="uid://fkpaaxk3duka" path="res://assets/PixelOperator8-Bold.ttf" id="3_v1837"]
+[ext_resource type="FontFile" uid="uid://bdhbexalcyah1" path="res://assets/PixelOperator8.ttf" id="4_ljr8u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v1837"]
+bg_color = Color(0.4129715, 0.63340944, 0.7496756, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.63098234, 0.83696413, 0.9194449, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Node2D" type="Node2D" unique_id=1789745542]
+script = ExtResource("1_hq8kx")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2077754261]
+offset_right = 1153.0
+offset_bottom = 650.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+texture = ExtResource("2_b0532")
+expand_mode = 1
+
+[node name="Button manager" type="Control" parent="." unique_id=482375337]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Panel" type="Panel" parent="Button manager" unique_id=707791185]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 99.0
+offset_right = 374.0
+offset_bottom = 377.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_v1837")
+
+[node name="Level1" type="Button" parent="Button manager/Panel" unique_id=819003562]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.425
+anchor_right = -0.425
+offset_left = 155.07501
+offset_top = 191.0
+offset_right = 330.075
+offset_bottom = 256.0
+theme_override_fonts/font = ExtResource("3_v1837")
+text = "Play"
+
+[node name="Label" type="Label" parent="Button manager/Panel" unique_id=93078548]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.083000004
+offset_left = -30.5
+offset_top = 21.0
+offset_right = 23.5
+offset_bottom = 20.925999
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_v1837")
+text = "Level 1"
+
+[node name="Label2" type="Label" parent="Button manager/Panel" unique_id=1824477879]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -116.5
+offset_top = -38.0
+offset_right = 127.5
+offset_bottom = 38.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_ljr8u")
+text = "One of the easiest 
+levels of the game. 
+Suprisingly"
+
+[node name="Panel2" type="Panel" parent="Button manager" unique_id=1066905934]
+layout_mode = 0
+offset_left = 426.0
+offset_top = 94.0
+offset_right = 685.0
+offset_bottom = 372.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_v1837")
+
+[node name="Label" type="Label" parent="Button manager/Panel2" unique_id=1598811115]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -47.5
+offset_top = 20.0
+offset_right = 52.5
+offset_bottom = 36.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_v1837")
+text = "Level 2"
+
+[node name="Level2" type="Button" parent="Button manager/Panel2" unique_id=2126470976]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 48.0
+offset_top = 198.0
+offset_right = -36.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_v1837")
+text = "Play"
+
+[node name="Label2" type="Label" parent="Button manager/Panel2" unique_id=941263242]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.0
+offset_top = -38.25
+offset_right = 99.0
+offset_bottom = 38.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_ljr8u")
+text = "Harder than 
+level 1 somehow"
+
+[node name="Panel3" type="Panel" parent="Button manager" unique_id=586203738]
+layout_mode = 0
+offset_left = 726.0
+offset_top = 93.0
+offset_right = 985.0
+offset_bottom = 371.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_v1837")
+
+[node name="Label" type="Label" parent="Button manager/Panel3" unique_id=515769827]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -47.5
+offset_top = 20.0
+offset_right = 52.5
+offset_bottom = 36.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_v1837")
+text = "Level 3"
+
+[node name="Level2" type="Button" parent="Button manager/Panel3" unique_id=413689092]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 48.0
+offset_top = 198.0
+offset_right = -36.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_v1837")
+text = "Play"
+
+[node name="Label2" type="Label" parent="Button manager/Panel3" unique_id=2142111529]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.0
+offset_top = -38.25
+offset_right = 99.0
+offset_bottom = 38.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_ljr8u")
+text = "And you thought
+level 2 was hard?"
+
+[node name="Fade_transition" parent="." unique_id=678732442 instance=ExtResource("2_dlk6t")]
+visible = false
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="fade_timer" type="Timer" parent="Fade_transition" unique_id=1847753979]
+
+[connection signal="pressed" from="Button manager/Panel/Level1" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button manager/Panel/Level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="Button manager/Panel2/Level2" to="." method="_on_level_2_pressed"]
+[connection signal="timeout" from="Fade_transition/fade_timer" to="." method="_on_fade_timer_timeout"]
