@@ -30,6 +30,14 @@ func _on_level_1_pressed() -> void:
 	$Fade_transition.show()
 	$Fade_transition/fade_timer.start()
 	$Fade_transition/AnimationPlayer.play("fade_out")
+	
+func _on_level_3_pressed() -> void:
+	button_type = "level3"
+	$Fade_transition.show()
+	$Fade_transition/fade_timer.start()
+	$Fade_transition/AnimationPlayer.play("fade_out")
+	
+	
 
 
 func _on_fade_timer_timeout() -> void:
@@ -38,3 +46,6 @@ func _on_fade_timer_timeout() -> void:
 		
 	elif button_type == "level2" :
 		get_tree().change_scene_to_file("res://sprites/level2.tscn")
+		
+	elif button_type == "level3" :
+		get_tree().change_scene_to_file("res://sprites/level3.tscn")
