@@ -1,14 +1,14 @@
 [gd_scene format=4 uid="uid://g75v2jg8x26t"]
 
-[ext_resource type="Script" uid="uid://4o4j0gdp87fk" path="res://sprites/level_1.gd" id="1_uscw5"]
+[ext_resource type="Script" uid="uid://4o4j0gdp87fk" path="res://scripts/level_1.gd" id="1_uscw5"]
 [ext_resource type="Texture2D" uid="uid://bl1mwcl41g25x" path="res://assets/Background-grey.png" id="2_ea1qv"]
 [ext_resource type="PackedScene" uid="uid://vd0ukj8nelpr" path="res://sprites/character_body_2d.tscn" id="3_smj4m"]
 [ext_resource type="Texture2D" uid="uid://beo0amntln2h4" path="res://assets/Sprite-0008.png" id="6_jg10s"]
 [ext_resource type="PackedScene" uid="uid://bl1vym7uvdpk1" path="res://sprites/fade_transition.tscn" id="7_pq11x"]
 [ext_resource type="FontFile" uid="uid://fkpaaxk3duka" path="res://assets/PixelOperator8-Bold.ttf" id="8_2d6dn"]
 [ext_resource type="PackedScene" uid="uid://cvoe5einrmqfk" path="res://sprites/spike.tscn" id="8_tri68"]
-[ext_resource type="PackedScene" uid="uid://cnkeijmqqs0w8" path="res://finish.tscn" id="9_n0jwe"]
-[ext_resource type="PackedScene" uid="uid://dlmm32scurf6a" path="res://bump.tscn" id="10_cggod"]
+[ext_resource type="PackedScene" uid="uid://cnkeijmqqs0w8" path="res://sprites/finish.tscn" id="9_n0jwe"]
+[ext_resource type="PackedScene" uid="uid://dlmm32scurf6a" path="res://sprites/bump.tscn" id="10_cggod"]
 [ext_resource type="Texture2D" uid="uid://di0focrc5l08h" path="res://assets/Redo.png" id="11_8tf1r"]
 [ext_resource type="Texture2D" uid="uid://mb1uh6rivabu" path="res://assets/Home (2).png" id="12_jwpw5"]
 
@@ -97,7 +97,7 @@ corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
-[node name="Level" type="Node2D" unique_id=1854968904]
+[node name="Level2" type="Node2D" unique_id=1854968904]
 script = ExtResource("1_uscw5")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=612081581]
