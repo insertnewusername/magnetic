@@ -18,23 +18,56 @@ corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
-[node name="Node2D" type="Node2D" unique_id=1789745542]
-script = ExtResource("1_hq8kx")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ljr8u"]
+bg_color = Color(0.27149817, 0.49593377, 0.62087476, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0owga"]
+bg_color = Color(0.27149817, 0.49593377, 0.62087476, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ig60"]
+bg_color = Color(0.27149817, 0.49593377, 0.62087476, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_452fw"]
+bg_color = Color(0.24093637, 0.45030123, 0.56744456, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Button manager" type="Control" unique_id=482375337]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=2077754261]
-offset_right = 1153.0
-offset_bottom = 650.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
 texture = ExtResource("2_b0532")
 expand_mode = 1
 
-[node name="Button manager" type="Control" parent="." unique_id=482375337]
-layout_mode = 3
-anchors_preset = 0
-
-[node name="Panel" type="Panel" parent="Button manager" unique_id=707791185]
+[node name="Panel" type="Panel" parent="." unique_id=707791185]
 layout_mode = 0
 offset_left = 115.0
 offset_top = 99.0
@@ -42,19 +75,28 @@ offset_right = 374.0
 offset_bottom = 377.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_v1837")
 
-[node name="Level1" type="Button" parent="Button manager/Panel" unique_id=819003562]
+[node name="Level1" type="Button" parent="Panel" unique_id=819003562]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.425
-anchor_right = -0.425
-offset_left = 155.07501
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 45.000008
 offset_top = 191.0
-offset_right = 330.075
-offset_bottom = 256.0
+offset_right = -39.0
+offset_bottom = -22.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_v1837")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ljr8u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0owga")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_1ig60")
+theme_override_styles/hover = SubResource("StyleBoxFlat_452fw")
 text = "Play"
 
-[node name="Label" type="Label" parent="Button manager/Panel" unique_id=93078548]
+[node name="Label" type="Label" parent="Panel" unique_id=93078548]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -68,7 +110,7 @@ grow_horizontal = 2
 theme_override_fonts/font = ExtResource("3_v1837")
 text = "Level 1"
 
-[node name="Label2" type="Label" parent="Button manager/Panel" unique_id=1824477879]
+[node name="Label2" type="Label" parent="Panel" unique_id=1824477879]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -86,7 +128,7 @@ text = "One of the easiest
 levels of the game. 
 Suprisingly"
 
-[node name="Panel2" type="Panel" parent="Button manager" unique_id=1066905934]
+[node name="Panel2" type="Panel" parent="." unique_id=1066905934]
 layout_mode = 0
 offset_left = 426.0
 offset_top = 94.0
@@ -94,7 +136,7 @@ offset_right = 685.0
 offset_bottom = 372.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_v1837")
 
-[node name="Label" type="Label" parent="Button manager/Panel2" unique_id=1598811115]
+[node name="Label" type="Label" parent="Panel2" unique_id=1598811115]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -107,7 +149,7 @@ grow_horizontal = 2
 theme_override_fonts/font = ExtResource("3_v1837")
 text = "Level 2"
 
-[node name="Level2" type="Button" parent="Button manager/Panel2" unique_id=2126470976]
+[node name="Level2" type="Button" parent="Panel2" unique_id=2126470976]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -118,10 +160,19 @@ offset_right = -36.0
 offset_bottom = -15.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_v1837")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ljr8u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0owga")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_1ig60")
+theme_override_styles/hover = SubResource("StyleBoxFlat_452fw")
 text = "Play"
 
-[node name="Label2" type="Label" parent="Button manager/Panel2" unique_id=941263242]
+[node name="Label2" type="Label" parent="Panel2" unique_id=941263242]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -138,7 +189,7 @@ theme_override_fonts/font = ExtResource("4_ljr8u")
 text = "Harder than 
 level 1 somehow"
 
-[node name="Panel3" type="Panel" parent="Button manager" unique_id=586203738]
+[node name="Panel3" type="Panel" parent="." unique_id=586203738]
 layout_mode = 0
 offset_left = 726.0
 offset_top = 93.0
@@ -146,7 +197,7 @@ offset_right = 985.0
 offset_bottom = 371.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_v1837")
 
-[node name="Label" type="Label" parent="Button manager/Panel3" unique_id=515769827]
+[node name="Label" type="Label" parent="Panel3" unique_id=515769827]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -159,7 +210,7 @@ grow_horizontal = 2
 theme_override_fonts/font = ExtResource("3_v1837")
 text = "Level 3"
 
-[node name="Level3" type="Button" parent="Button manager/Panel3" unique_id=413689092]
+[node name="Level3" type="Button" parent="Panel3" unique_id=413689092]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -170,10 +221,19 @@ offset_right = -36.0
 offset_bottom = -15.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_v1837")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ljr8u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0owga")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_1ig60")
+theme_override_styles/hover = SubResource("StyleBoxFlat_452fw")
 text = "Play"
 
-[node name="Label2" type="Label" parent="Button manager/Panel3" unique_id=2142111529]
+[node name="Label2" type="Label" parent="Panel3" unique_id=2142111529]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -190,15 +250,18 @@ theme_override_fonts/font = ExtResource("4_ljr8u")
 text = "And you thought
 level 2 was hard?"
 
-[node name="Fade_transition" parent="." unique_id=678732442 instance=ExtResource("2_dlk6t")]
+[node name="Node2D" type="Node2D" parent="." unique_id=1789745542]
+script = ExtResource("1_hq8kx")
+
+[node name="Fade_transition" parent="Node2D" unique_id=678732442 instance=ExtResource("2_dlk6t")]
 visible = false
 offset_right = 1280.0
 offset_bottom = 720.0
 
-[node name="fade_timer" type="Timer" parent="Fade_transition" unique_id=1847753979]
+[node name="fade_timer" type="Timer" parent="Node2D/Fade_transition" unique_id=1847753979]
 
-[connection signal="pressed" from="Button manager/Panel/Level1" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Button manager/Panel/Level1" to="." method="_on_level_1_pressed"]
-[connection signal="pressed" from="Button manager/Panel2/Level2" to="." method="_on_level_2_pressed"]
-[connection signal="pressed" from="Button manager/Panel3/Level3" to="." method="_on_level_3_pressed"]
-[connection signal="timeout" from="Fade_transition/fade_timer" to="." method="_on_fade_timer_timeout"]
+[connection signal="pressed" from="Panel/Level1" to="Node2D" method="_on_start_pressed"]
+[connection signal="pressed" from="Panel/Level1" to="Node2D" method="_on_level_1_pressed"]
+[connection signal="pressed" from="Panel2/Level2" to="Node2D" method="_on_level_2_pressed"]
+[connection signal="pressed" from="Panel3/Level3" to="Node2D" method="_on_level_3_pressed"]
+[connection signal="timeout" from="Node2D/Fade_transition/fade_timer" to="Node2D" method="_on_fade_timer_timeout"]

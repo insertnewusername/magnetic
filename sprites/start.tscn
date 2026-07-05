@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bdiep7rsc11hy" path="res://scripts/start.gd" id="1_td7r5"]
 [ext_resource type="Texture2D" uid="uid://csjuatp8oa5ba" path="res://assets/Gravity Flip.png" id="2_nfnv3"]
 [ext_resource type="PackedScene" uid="uid://bl1vym7uvdpk1" path="res://sprites/fade_transition.tscn" id="3_oiwjs"]
+[ext_resource type="FontFile" uid="uid://fkpaaxk3duka" path="res://assets/PixelOperator8-Bold.ttf" id="4_nfnv3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y5hus"]
 bg_color = Color(1, 1, 1, 1)
@@ -14,12 +15,25 @@ shadow_color = Color(0, 0, 0, 0.36078432)
 shadow_size = 5
 shadow_offset = Vector2(0, 3.41)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1n0d2"]
-bg_color = Color(0.96474224, 0.96474224, 0.9647421, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_td7r5"]
+bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.36078432)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nfnv3"]
+bg_color = Color(0.6484881, 0.6484881, 0.6484881, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.36078432)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
 
 [node name="Mainmenu" type="Control" unique_id=557051809]
 layout_mode = 3
@@ -56,9 +70,14 @@ offset_bottom = 50.625
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_y5hus")
-theme_override_styles/hover = SubResource("StyleBoxFlat_1n0d2")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_td7r5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nfnv3")
 text = "Start Game"
 
 [node name="Fade_transition" parent="." unique_id=678732442 instance=ExtResource("3_oiwjs")]
@@ -69,16 +88,17 @@ layout_mode = 1
 
 [node name="Label" type="Label" parent="." unique_id=256817471]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -191.0
-offset_top = 16.0
-offset_right = 191.0
-offset_bottom = 112.0
+offset_left = -271.5
+offset_top = 38.0
+offset_right = 271.5
+offset_bottom = 71.0
 grow_horizontal = 2
+theme_override_fonts/font = ExtResource("4_nfnv3")
 theme_override_font_sizes/font_size = 70
-text = "magnetic"
+text = "Magnetic"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="timeout" from="Fade_transition/fade_timer" to="." method="_on_timer_timeout"]

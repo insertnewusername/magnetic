@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://ojgjpxu35ej"]
 
-[ext_resource type="Script" uid="uid://4o4j0gdp87fk" path="res://sprites/level_1.gd" id="1_la4lf"]
+[ext_resource type="Script" uid="uid://4o4j0gdp87fk" path="res://scripts/level_1.gd" id="1_la4lf"]
 [ext_resource type="PackedScene" uid="uid://vd0ukj8nelpr" path="res://sprites/character_body_2d.tscn" id="2_8xp2d"]
 [ext_resource type="Texture2D" uid="uid://bl1mwcl41g25x" path="res://assets/Background-grey.png" id="2_vqhb7"]
 [ext_resource type="Texture2D" uid="uid://o6f2ak1htar8" path="res://assets/world_tileset.png" id="3_1ba2l"]
@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bl1vym7uvdpk1" path="res://sprites/fade_transition.tscn" id="4_57g6u"]
 [ext_resource type="Texture2D" uid="uid://beo0amntln2h4" path="res://assets/Sprite-0008.png" id="5_1ba2l"]
 [ext_resource type="PackedScene" uid="uid://cvoe5einrmqfk" path="res://sprites/spike.tscn" id="7_57g6u"]
-[ext_resource type="PackedScene" uid="uid://cnkeijmqqs0w8" path="res://finish.tscn" id="8_yisr3"]
+[ext_resource type="PackedScene" uid="uid://cnkeijmqqs0w8" path="res://sprites/finish.tscn" id="8_yisr3"]
 [ext_resource type="FontFile" uid="uid://fkpaaxk3duka" path="res://assets/PixelOperator8-Bold.ttf" id="10_wb6oa"]
 [ext_resource type="Texture2D" uid="uid://di0focrc5l08h" path="res://assets/Redo.png" id="10_xdptx"]
 [ext_resource type="Texture2D" uid="uid://mb1uh6rivabu" path="res://assets/Home (2).png" id="11_wb6oa"]
@@ -1005,3 +1005,5 @@ theme_override_font_sizes/font_size = 40
 text = "Nice!"
 
 [connection signal="player_won" from="Player" to="." method="_on_player_player_won"]
+[connection signal="pressed" from="CanvasLayer/Panel/Redo" to="." method="_on_redo_pressed"]
+[connection signal="pressed" from="CanvasLayer/Panel/Home" to="." method="_on_home_pressed"]
