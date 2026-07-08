@@ -25,8 +25,6 @@ func _physics_process(delta: float) -> void:
 		gravity_dir *= -1
 		flip_timer = FLIP_COOLDOWN
 
-		# VISUAL FLIP 
-		scale.y = gravity_dir
 		
 		position.y += gravity_dir * 2
 		
