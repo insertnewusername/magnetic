@@ -29,3 +29,9 @@ func change2() -> void:
 	limit_top = -514
 	limit_right = 6700
 	limit_bottom = -174
+	
+func change3() -> void:
+	limit_left = -95
+	limit_top = 0
+	limit_right = 7504
+	limit_bottom = 512
