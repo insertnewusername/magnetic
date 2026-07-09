@@ -24,3 +24,8 @@ func backtonormal() -> void:
 	
 	print("cameraupdateagain")
 	
+func change2() -> void:
+	limit_left = 4691
+	limit_top = -514
+	limit_right = 6985
+	limit_bottom = 11

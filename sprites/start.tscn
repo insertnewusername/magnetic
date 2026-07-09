@@ -80,12 +80,6 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_td7r5")
 theme_override_styles/hover = SubResource("StyleBoxFlat_nfnv3")
 text = "Start Game"
 
-[node name="Fade_transition" parent="." unique_id=678732442 instance=ExtResource("3_oiwjs")]
-visible = false
-layout_mode = 1
-
-[node name="fade_timer" type="Timer" parent="Fade_transition" unique_id=777212244]
-
 [node name="Label" type="Label" parent="." unique_id=256817471]
 layout_mode = 1
 anchors_preset = -1
@@ -99,6 +93,12 @@ grow_horizontal = 2
 theme_override_fonts/font = ExtResource("4_nfnv3")
 theme_override_font_sizes/font_size = 70
 text = "Magnetic"
+
+[node name="Fade_transition" parent="." unique_id=678732442 instance=ExtResource("3_oiwjs")]
+visible = false
+layout_mode = 1
+
+[node name="fade_timer" type="Timer" parent="Fade_transition" unique_id=777212244]
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="timeout" from="Fade_transition/fade_timer" to="." method="_on_timer_timeout"]
