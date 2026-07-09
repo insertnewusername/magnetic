@@ -18,8 +18,8 @@ func change() -> void:
 	
 func backtonormal() -> void:
 	limit_left = -96
-	limit_top = 0
-	limit_right = 7040
+	limit_top = -116
+	limit_right = 7503
 	limit_bottom = 512
 	
 	print("cameraupdateagain")

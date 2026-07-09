@@ -212,7 +212,7 @@ position = Vector2(-57, 444)
 
 [node name="Camera2D3" type="Camera2D" parent="Player" unique_id=72801524]
 limit_left = -96
-limit_top = 0
+limit_top = -116
 limit_right = 7503
 limit_bottom = 512
 script = ExtResource("5_raiu2")
