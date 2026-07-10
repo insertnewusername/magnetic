@@ -14,5 +14,12 @@ Demo game:
 game available on web on:https://insertnewusernamehere.itch.io/magnetic
 
 Screenshots:
-<img width="1142" height="641" alt="Screenshot 2026-07-04 121323" src="https://github.com/user-attachments/assets/92d76485-c7d1-49f5-960b-cb2eeaa965e6" />
-<img width="1135" height="635" alt="Screenshot 2026-07-04 121246" src="https://github.com/user-attachments/assets/e2767dfe-9e13-4352-af61-9ed48684d1ed" />
+<img width="1146" height="642" alt="Screenshot 2026-07-10 101232" src="https://github.com/user-attachments/assets/5a10cc42-77cb-4591-b70a-f91d362c7c89" />
+<img width="1522" height="671" alt="Screenshot 2026-07-10 100858" src="https://github.com/user-attachments/assets/7d68c9ea-5aa2-4e06-9747-1bd465bee256" />
+
+Updates since last time:
+Made character guy symetrical, although kept flipping him each time cuz otherwise transition would look kinda weird
+Made levels selectino screen much nicer
+Added level 3
+Added portals in level 3
+And much more! (I think)
