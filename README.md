@@ -12,7 +12,8 @@ Spacebar- Jump
 
 <h1>Updates since last time:</h1>
 Made character guy symetrical, although kept flipping him each time cuz otherwise transition would look kinda weird<br>
-Made levels selectino screen much nicer<br>
+Made levels selection screen much nicer<br>
+Fixed level selection screen weird ratio<br>
 Added level 3<br>
 Added portals in level 3<br>
 Added updating camera limits based on character position<br>
