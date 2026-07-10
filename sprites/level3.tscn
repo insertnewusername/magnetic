@@ -885,10 +885,10 @@ visible = false
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
-offset_left = -149.0
-offset_top = -85.0
-offset_right = 1131.0
-offset_bottom = 635.0
+offset_left = -1821.0
+offset_top = -2110.0
+offset_right = 7820.0
+offset_bottom = 2920.0
 grow_horizontal = 1
 grow_vertical = 1
 
