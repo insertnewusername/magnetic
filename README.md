@@ -24,4 +24,3 @@ game available on web on:https://insertnewusernamehere.itch.io/magnetic
 Screenshots:
 <img width="1146" height="642" alt="Screenshot 2026-07-10 101232" src="https://github.com/user-attachments/assets/5a10cc42-77cb-4591-b70a-f91d362c7c89" />
 <img width="1522" height="671" alt="Screenshot 2026-07-10 100858" src="https://github.com/user-attachments/assets/7d68c9ea-5aa2-4e06-9747-1bd465bee256" />
-
