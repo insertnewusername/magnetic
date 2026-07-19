@@ -1,4 +1,4 @@
-Magnetic
+<h1>Magnetic</h1>
 
 Magnetic is a fun 2d platformer game, where your character runs along the map, and pressing space flips the gravity! Dodge spikes, use the jump pads, and jump your way to victory!
 
@@ -6,13 +6,22 @@ Magnetic is a fun 2d platformer game, where your character runs along the map, a
 
 Note: I kinda didn't know that i had to push to github so it doesn't have that many commits... I started pushing this after i reached like 11 hours.. Oops I won't do that next time. Also level 3 I haven't built it yet so it'll redirect to level 2 oops
 
-Controls:
+<h1>Controls:</h1>
 Spacebar- Jump
 
 
+<h1>Updates since last time:</h1>
+Made character guy symetrical, although kept flipping him each time cuz otherwise transition would look kinda weird<br>
+Made levels selection screen much nicer<br>
+Fixed level selection screen weird ratio<br>
+Added level 3<br>
+Added portals in level 3<br>
+Added updating camera limits based on character position<br>
+And much more! (I think)<br>
 Demo game:
 game available on web on:https://insertnewusernamehere.itch.io/magnetic
 
 Screenshots:
-<img width="1142" height="641" alt="Screenshot 2026-07-04 121323" src="https://github.com/user-attachments/assets/92d76485-c7d1-49f5-960b-cb2eeaa965e6" />
-<img width="1135" height="635" alt="Screenshot 2026-07-04 121246" src="https://github.com/user-attachments/assets/e2767dfe-9e13-4352-af61-9ed48684d1ed" />
+<img width="1146" height="642" alt="Screenshot 2026-07-10 101232" src="https://github.com/user-attachments/assets/5a10cc42-77cb-4591-b70a-f91d362c7c89" />
+<img width="1522" height="671" alt="Screenshot 2026-07-10 100858" src="https://github.com/user-attachments/assets/7d68c9ea-5aa2-4e06-9747-1bd465bee256" />
+
