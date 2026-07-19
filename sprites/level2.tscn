@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://g75v2jg8x26t"]
 
-[ext_resource type="Script" uid="uid://4o4j0gdp87fk" path="res://scripts/level_1.gd" id="1_uscw5"]
+[ext_resource type="Script" uid="uid://dbpirngwo1wyo" path="res://scripts/level_2.gd" id="1_2d6dn"]
 [ext_resource type="Texture2D" uid="uid://bl1mwcl41g25x" path="res://assets/Background-grey.png" id="2_ea1qv"]
 [ext_resource type="PackedScene" uid="uid://vd0ukj8nelpr" path="res://sprites/character_body_2d.tscn" id="3_smj4m"]
 [ext_resource type="Texture2D" uid="uid://beo0amntln2h4" path="res://assets/Sprite-0008.png" id="6_jg10s"]
@@ -98,7 +98,7 @@ corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
 [node name="Level2" type="Node2D" unique_id=1854968904]
-script = ExtResource("1_uscw5")
+script = ExtResource("1_2d6dn")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=612081581]
 custom_minimum_size = Vector2(50, 0)
@@ -774,7 +774,7 @@ position = Vector2(6841, 291)
 rotation = -3.1415927
 scale = Vector2(0.31632763, 0.31632763)
 
-[node name="Fade_transition" parent="Jump_pads" unique_id=678732442 instance=ExtResource("7_pq11x")]
+[node name="Fade_transition" parent="." unique_id=678732442 instance=ExtResource("7_pq11x")]
 visible = false
 anchors_preset = 0
 anchor_right = 0.0
