@@ -1,9 +1,11 @@
 extends Node2D
 @onready var Fade_transition: ColorRect = $Fade_transition
+@onready var bgmusic: AudioStreamPlayer = $bgmusic
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	bgmusic.play()
 	$Fade_transition.show()
 	$Fade_transition/AnimationPlayer.play("fade_in")
 	_setup_level()
@@ -39,3 +41,7 @@ func _on_home_pressed() -> void:
 func _on_redo_pressed() -> void:
 	var current_scene = get_tree().current_scene
 	get_tree().change_scene_to_file(current_scene.scene_file_path)
+
+
+func _on_bgmusic_finished() -> void:
+	bgmusic.play()

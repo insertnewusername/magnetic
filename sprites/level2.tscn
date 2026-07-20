@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dh2q31nxybsjs" path="res://sprites/bump.tscn" id="10_cggod"]
 [ext_resource type="Texture2D" uid="uid://di0focrc5l08h" path="res://assets/Redo.png" id="11_8tf1r"]
 [ext_resource type="Texture2D" uid="uid://mb1uh6rivabu" path="res://assets/Home (2).png" id="12_jwpw5"]
+[ext_resource type="AudioStream" uid="uid://domlwid40jgny" path="res://assets/level2.mp3" id="12_uscw5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_57g6u"]
 texture = ExtResource("6_jg10s")
@@ -785,6 +786,10 @@ offset_bottom = 3149.0
 grow_horizontal = 1
 grow_vertical = 1
 
+[node name="bgmusic" type="AudioStreamPlayer" parent="." unique_id=1596964488]
+stream = ExtResource("12_uscw5")
+
 [connection signal="player_won" from="Player" to="." method="_on_player_player_won"]
 [connection signal="pressed" from="CanvasLayer/Panel/Redo" to="." method="_on_redo_pressed"]
 [connection signal="pressed" from="CanvasLayer/Panel/Home" to="." method="_on_home_pressed"]
+[connection signal="finished" from="bgmusic" to="." method="_on_bgmusic_finished"]

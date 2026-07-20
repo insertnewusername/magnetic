@@ -12,6 +12,7 @@
 [ext_resource type="FontFile" uid="uid://fkpaaxk3duka" path="res://assets/PixelOperator8-Bold.ttf" id="10_wb6oa"]
 [ext_resource type="Texture2D" uid="uid://di0focrc5l08h" path="res://assets/Redo.png" id="10_xdptx"]
 [ext_resource type="Texture2D" uid="uid://mb1uh6rivabu" path="res://assets/Home (2).png" id="11_wb6oa"]
+[ext_resource type="AudioStream" uid="uid://cmbctt2gwbh5j" path="res://assets/level1.mp3" id="13_jvoeo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ccg5i"]
 texture = ExtResource("3_1ba2l")
@@ -1004,6 +1005,10 @@ offset_bottom = 1694.0
 grow_horizontal = 1
 grow_vertical = 1
 
+[node name="bgmusic" type="AudioStreamPlayer" parent="." unique_id=196635174]
+stream = ExtResource("13_jvoeo")
+
 [connection signal="player_won" from="Player" to="." method="_on_player_player_won"]
 [connection signal="pressed" from="CanvasLayer/Panel/Redo" to="." method="_on_redo_pressed"]
 [connection signal="pressed" from="CanvasLayer/Panel/Home" to="." method="_on_home_pressed"]
+[connection signal="finished" from="bgmusic" to="." method="_on_bgmusic_finished"]
