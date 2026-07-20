@@ -55,7 +55,8 @@ func _on_fade_timer_timeout() -> void:
 		
 	elif button_type == "level3" :
 		get_tree().change_scene_to_file("res://sprites/level3.tscn")
-
+	elif button_type == "level4" :
+		get_tree().change_scene_to_file("res://sprites/level4.tscn")
 
 
 
@@ -65,4 +66,9 @@ func _on_bgmusic_finished() -> void:
 
 
 func _on_level_4_pressed() -> void:
-	pass # Replace with function body.
+	click.play()
+	button_type = "level4"
+	$Fade_transition.show()
+	$Fade_transition/fade_timer.start()
+	$Fade_transition/AnimationPlayer.play("fade_out")
+	

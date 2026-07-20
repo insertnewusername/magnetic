@@ -328,7 +328,7 @@ grow_horizontal = 2
 theme_override_fonts/font = ExtResource("3_v1837")
 text = "Level 4"
 
-[node name="Level3" type="Button" parent="Panel5" unique_id=647259119]
+[node name="Level4" type="Button" parent="Panel5" unique_id=647259119]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -374,3 +374,4 @@ text = "1+2+3=4"
 [connection signal="timeout" from="Node2D/Fade_transition/fade_timer" to="Node2D" method="_on_fade_timer_timeout"]
 [connection signal="finished" from="Node2D/Bgmusic" to="Node2D" method="_on_bgmusic_finished"]
 [connection signal="finished" from="Click" to="Node2D" method="_on_click_finished"]
+[connection signal="pressed" from="Panel5/Level4" to="Node2D" method="_on_level_4_pressed"]
