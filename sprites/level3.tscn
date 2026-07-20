@@ -548,10 +548,6 @@ scale = Vector2(0.06640514, 0.06640514)
 position = Vector2(2879, 476)
 scale = Vector2(0.06640514, 0.06640514)
 
-[node name="Spike77" parent="Spikes" unique_id=1518507081 instance=ExtResource("7_qd8gx")]
-position = Vector2(3261.9998, 426.99997)
-scale = Vector2(0.06640514, 0.06640514)
-
 [node name="Spike78" parent="Spikes" unique_id=2123586834 instance=ExtResource("7_qd8gx")]
 position = Vector2(3882.9998, 630)
 rotation = -3.1415927
@@ -901,6 +897,7 @@ script = ExtResource("16_8msq2")
 
 [node name="bgmusic" type="AudioStreamPlayer" parent="." unique_id=1943138876]
 stream = ExtResource("17_esb4i")
+volume_db = -17.0
 
 [connection signal="player_won" from="Player" to="." method="_on_player_player_won"]
 [connection signal="pressed" from="CanvasLayer/Panel/Redo" to="." method="_on_redo_pressed"]
