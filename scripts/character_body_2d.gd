@@ -1,4 +1,5 @@
 extends CharacterBody2D
+@onready var deathexplosion: GPUParticles2D = $Deathexplosion
 
 signal player_won
 const SPEED = 250.0
@@ -49,13 +50,7 @@ func jump():
 		
 		
 func die():
-	if has_won:
-		return
-	gravity_dir = 1
-	velocity.y = 0
-	scale.y = 1
-	global_position = Vector2(respawn_x, respawn_y)
-	print("Player died")
+	deathexplosion.emitting = true
 	
 func win():
 	print("Player won")
@@ -65,3 +60,15 @@ func win():
 func teleport():
 	print("playerteleporting")
 	global_position = Vector2(777, 43)
+	
+	
+
+
+func _on_deathexplosion_finished() -> void:
+	if has_won:
+		return
+	gravity_dir = 1
+	velocity.y = 0
+	scale.y = 1
+	global_position = Vector2(respawn_x, respawn_y)
+	print("Player died")
