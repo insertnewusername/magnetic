@@ -2,10 +2,14 @@ extends Node2D
 @onready var Fade_transition: ColorRect = $Fade_transition
 @onready var bgmusic: AudioStreamPlayer = $bgmusic
 @onready var click: AudioStreamPlayer2D = $Click
+@onready var panel: Panel = $home/Panel
+
 var clicktype = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	panel.hide()
+	panel.process_mode = Node.PROCESS_MODE_WHEN_PAUSED
 	bgmusic.play()
 	$Fade_transition.show()
 	$Fade_transition/AnimationPlayer.play("fade_in")
@@ -59,3 +63,17 @@ func _on_click_finished() -> void:
 	elif clicktype == 2:
 		var current_scene = get_tree().current_scene
 		get_tree().change_scene_to_file(current_scene.scene_file_path)
+	elif clicktype == 0:
+		pass
+
+func _on_texture_button_2_pressed() -> void:
+	clicktype = 0
+	click.play()
+	get_tree().paused = true
+	panel.show()
+	
+func _on_resumebutton_pressed() -> void:
+	clicktype = 0
+	click.play()
+	get_tree().paused = false
+	panel.hide()
