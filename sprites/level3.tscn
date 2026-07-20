@@ -103,6 +103,21 @@ corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qd8gx"]
+load_path = "res://.godot/imported/Home.png-e4694e3567f2855c9a108aa43e0e6120.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_esb4i"]
+load_path = "res://.godot/imported/Home.png-e4694e3567f2855c9a108aa43e0e6120.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tucog"]
+load_path = "res://.godot/imported/Home.png-e4694e3567f2855c9a108aa43e0e6120.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_btqbf"]
+load_path = "res://.godot/imported/Home.png-e4694e3567f2855c9a108aa43e0e6120.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rtd65"]
+load_path = "res://.godot/imported/Home.png-e4694e3567f2855c9a108aa43e0e6120.ctex"
+
 [node name="Level3" type="Node2D" unique_id=1854968904]
 script = ExtResource("1_qd8gx")
 
@@ -899,6 +914,27 @@ script = ExtResource("16_8msq2")
 stream = ExtResource("17_esb4i")
 volume_db = -17.0
 
+[node name="home" type="CanvasLayer" parent="." unique_id=1412153252]
+
+[node name="TextureButton" type="TextureButton" parent="home" unique_id=644318982]
+anchors_preset = -1
+anchor_right = 1.6526667
+anchor_bottom = 2.9347656
+offset_left = 6.0
+offset_top = 5.0
+offset_right = -1846.8721
+offset_bottom = -1846.7281
+size_flags_horizontal = 4
+texture_normal = SubResource("CompressedTexture2D_qd8gx")
+texture_pressed = SubResource("CompressedTexture2D_esb4i")
+texture_hover = SubResource("CompressedTexture2D_tucog")
+texture_disabled = SubResource("CompressedTexture2D_btqbf")
+texture_focused = SubResource("CompressedTexture2D_rtd65")
+ignore_texture_size = true
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
 [connection signal="player_won" from="Player" to="." method="_on_player_player_won"]
 [connection signal="pressed" from="CanvasLayer/Panel/Redo" to="." method="_on_redo_pressed"]
 [connection signal="pressed" from="CanvasLayer/Panel/Home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="home/TextureButton" to="." method="_on_texture_button_pressed"]
