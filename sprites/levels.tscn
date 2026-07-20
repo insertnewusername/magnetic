@@ -70,10 +70,11 @@ texture = ExtResource("2_b0532")
 expand_mode = 1
 
 [node name="Panel" type="Panel" parent="." unique_id=707791185]
-layout_mode = 0
-anchor_left = 0.10243055
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.026041666
 anchor_top = 0.35185185
-anchor_right = 0.32725695
+anchor_right = 0.25086805
 anchor_bottom = 0.7808642
 theme_override_styles/panel = SubResource("StyleBoxFlat_v1837")
 metadata/_edit_use_anchors_ = true
@@ -134,9 +135,9 @@ Suprisingly"
 [node name="Panel2" type="Panel" parent="." unique_id=1066905934]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.40104166
+anchor_left = 0.27083334
 anchor_top = 0.35339507
-anchor_right = 0.6258681
+anchor_right = 0.4956597
 anchor_bottom = 0.7824074
 offset_top = -1.5258789e-05
 grow_horizontal = 2
@@ -198,10 +199,11 @@ text = "Harder than
 level 1 somehow"
 
 [node name="Panel3" type="Panel" parent="." unique_id=586203738]
-layout_mode = 0
-anchor_left = 0.6875
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5130208
 anchor_top = 0.35185185
-anchor_right = 0.9123264
+anchor_right = 0.7378472
 anchor_bottom = 0.7808642
 theme_override_styles/panel = SubResource("StyleBoxFlat_v1837")
 metadata/_edit_use_anchors_ = true
@@ -302,6 +304,68 @@ stream = ExtResource("6_ljr8u")
 
 [node name="Click" type="AudioStreamPlayer2D" parent="." unique_id=1831820962]
 stream = ExtResource("7_0owga")
+
+[node name="Panel5" type="Panel" parent="." unique_id=1634349589]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.7526042
+anchor_top = 0.35339507
+anchor_right = 0.9774306
+anchor_bottom = 0.7824074
+theme_override_styles/panel = SubResource("StyleBoxFlat_v1837")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Panel5" unique_id=906131243]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -47.5
+offset_top = 20.0
+offset_right = 52.5
+offset_bottom = 36.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_v1837")
+text = "Level 4"
+
+[node name="Level3" type="Button" parent="Panel5" unique_id=647259119]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 48.0
+offset_top = 198.0
+offset_right = -36.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_v1837")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ljr8u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0owga")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_1ig60")
+theme_override_styles/hover = SubResource("StyleBoxFlat_452fw")
+text = "Play"
+
+[node name="Label2" type="Label" parent="Panel5" unique_id=1869277984]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.0
+offset_top = -38.25
+offset_right = 99.0
+offset_bottom = 38.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_ljr8u")
+text = "1+2+3=4"
 
 [connection signal="pressed" from="Panel/Level1" to="Node2D" method="_on_start_pressed"]
 [connection signal="pressed" from="Panel/Level1" to="Node2D" method="_on_level_1_pressed"]
