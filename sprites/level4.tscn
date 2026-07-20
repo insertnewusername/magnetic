@@ -752,7 +752,7 @@ rotation = -3.1415927
 scale = Vector2(0.31632763, 0.31632763)
 
 [node name="Area2D6" parent="Node2D/Jump_pads" unique_id=791108346 instance=ExtResource("18_qdles")]
-position = Vector2(6821.0005, 35)
+position = Vector2(6796.608, 35.000004)
 rotation = -3.1415927
 scale = Vector2(0.31632763, 0.31632763)
 
@@ -1747,21 +1747,6 @@ scale = Vector2(0.06640514, 0.06640514)
 
 [node name="Spike219" parent="Spikes" unique_id=56069103 instance=ExtResource("8_vebwy")]
 position = Vector2(12947.393, 475)
-scale = Vector2(0.06640514, 0.06640514)
-
-[node name="Spike220" parent="Spikes" unique_id=1595866641 instance=ExtResource("8_vebwy")]
-position = Vector2(13374.393, 37)
-rotation = 3.1415925
-scale = Vector2(0.06640514, 0.06640514)
-
-[node name="Spike221" parent="Spikes" unique_id=1281773845 instance=ExtResource("8_vebwy")]
-position = Vector2(13348.393, 37)
-rotation = 3.1415925
-scale = Vector2(0.06640514, 0.06640514)
-
-[node name="Spike222" parent="Spikes" unique_id=741202213 instance=ExtResource("8_vebwy")]
-position = Vector2(13400.393, 37.000008)
-rotation = 3.1415925
 scale = Vector2(0.06640514, 0.06640514)
 
 [node name="Spike223" parent="Spikes" unique_id=1303899919 instance=ExtResource("8_vebwy")]
