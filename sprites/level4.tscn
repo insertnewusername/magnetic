@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://1kjmuju5ptgf" path="res://sprites/changecameralimitzone.tscn" id="19_1duel"]
 [ext_resource type="Script" uid="uid://dcy8541j243x4" path="res://scripts/changecameralimitzone2.gd" id="20_fcjqe"]
 [ext_resource type="PackedScene" uid="uid://b3o8ra1yxr1uv" path="res://sprites/portal.tscn" id="23_ny4e6"]
+[ext_resource type="Script" uid="uid://cb5oa3rsp5lri" path="res://scripts/portal2.gd" id="24_vebwy"]
 [ext_resource type="Script" uid="uid://dsua8gku3j0hn" path="res://scripts/changecameralimitzone3.gd" id="24_w5i74"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0o0kb"]
@@ -707,10 +708,10 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(-57, 444)
 
 [node name="Camera2D3" type="Camera2D" parent="Player" unique_id=72801524]
-limit_left = 18245
-limit_top = -561
-limit_right = 20072
-limit_bottom = 113
+limit_left = -96
+limit_top = 0
+limit_right = 21057
+limit_bottom = 513
 script = ExtResource("4_vebwy")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1197701037]
@@ -2571,6 +2572,7 @@ scale = Vector2(0.31632763, 0.31632763)
 [node name="portal" parent="Level3" unique_id=724537313 instance=ExtResource("23_ny4e6")]
 position = Vector2(-436.0547, 265)
 scale = Vector2(2.5894148, 2.5894148)
+script = ExtResource("24_vebwy")
 
 [node name="portal2" parent="Level3" unique_id=1023329538 instance=ExtResource("23_ny4e6")]
 position = Vector2(-393.05463, 33)

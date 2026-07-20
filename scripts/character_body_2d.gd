@@ -65,6 +65,10 @@ func teleport():
 	print("playerteleporting")
 	global_position = Vector2(777, 43)
 
+func teleport2():
+	print("playerteleporting")
+	global_position = Vector2(14285, 43)
+
 
 
 
