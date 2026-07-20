@@ -25,6 +25,9 @@ initial_velocity_max = 50.0
 gravity = Vector3(0, 0, 0)
 scale_min = 5.0
 scale_max = 7.0
+color = Color(0.40233856, 0.761348, 0.975581, 1)
+hue_variation_min = -2.2351742e-08
+hue_variation_max = 0.09999997
 
 [node name="Player" type="CharacterBody2D" unique_id=1289974708]
 script = ExtResource("1_1scg8")
