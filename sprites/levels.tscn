@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bl1vym7uvdpk1" path="res://sprites/fade_transition.tscn" id="2_dlk6t"]
 [ext_resource type="FontFile" uid="uid://fkpaaxk3duka" path="res://assets/PixelOperator8-Bold.ttf" id="3_v1837"]
 [ext_resource type="FontFile" uid="uid://bdhbexalcyah1" path="res://assets/PixelOperator8.ttf" id="4_ljr8u"]
+[ext_resource type="AudioStream" uid="uid://c500dsgxjwvv" path="res://assets/mouseclick.wav" id="6_ljr8u"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v1837"]
 bg_color = Color(0.4129715, 0.63340944, 0.7496756, 1)
@@ -294,6 +295,9 @@ offset_right = 3105.0
 offset_bottom = 1896.0
 
 [node name="fade_timer" type="Timer" parent="Node2D/Fade_transition" unique_id=1847753979]
+
+[node name="Click" type="AudioStreamPlayer2D" parent="." unique_id=1831820962]
+stream = ExtResource("6_ljr8u")
 
 [connection signal="pressed" from="Panel/Level1" to="Node2D" method="_on_start_pressed"]
 [connection signal="pressed" from="Panel/Level1" to="Node2D" method="_on_level_1_pressed"]

@@ -659,7 +659,6 @@ rotation = -3.1415927
 scale = Vector2(0.06640514, 0.06640514)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1000445772]
-visible = false
 
 [node name="Panel" type="Panel" parent="CanvasLayer" unique_id=103311288]
 anchors_preset = 8

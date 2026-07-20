@@ -29,9 +29,7 @@ func _on_player_player_won() -> void:
 func _on_home_pressed() -> void:
 	get_tree().change_scene_to_file("res://sprites/levels.tscn")
 	
-	
 
-
-
-
-	
+func _on_redo_pressed() -> void:
+	var current_scene = get_tree().current_scene
+	get_tree().change_scene_to_file(current_scene.scene_file_path)
