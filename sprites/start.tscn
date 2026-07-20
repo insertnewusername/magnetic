@@ -17,16 +17,6 @@ shadow_color = Color(0, 0, 0, 0.36078432)
 shadow_size = 5
 shadow_offset = Vector2(0, 3.41)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_td7r5"]
-bg_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_color = Color(0, 0, 0, 0.36078432)
-shadow_size = 5
-shadow_offset = Vector2(0, 3.41)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nfnv3"]
 bg_color = Color(0.6484881, 0.6484881, 0.6484881, 1)
 corner_radius_top_left = 16
@@ -78,7 +68,8 @@ theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
 theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_y5hus")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_td7r5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nfnv3")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_nfnv3")
 theme_override_styles/hover = SubResource("StyleBoxFlat_nfnv3")
 text = "Start Game"
 
