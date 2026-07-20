@@ -62,3 +62,7 @@ func _on_fade_timer_timeout() -> void:
 
 func _on_bgmusic_finished() -> void:
 	bgmusic.play()
+
+
+func _on_level_4_pressed() -> void:
+	pass # Replace with function body.
