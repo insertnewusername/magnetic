@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://di0focrc5l08h" path="res://assets/Redo.png" id="10_xdptx"]
 [ext_resource type="Texture2D" uid="uid://mb1uh6rivabu" path="res://assets/Home (2).png" id="11_wb6oa"]
 [ext_resource type="AudioStream" uid="uid://cmbctt2gwbh5j" path="res://assets/level1.mp3" id="13_jvoeo"]
+[ext_resource type="AudioStream" uid="uid://c500dsgxjwvv" path="res://assets/mouseclick.wav" id="14_g7bia"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ccg5i"]
 texture = ExtResource("3_1ba2l")
@@ -1044,8 +1045,12 @@ ignore_texture_size = true
 stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
+[node name="Click" type="AudioStreamPlayer2D" parent="." unique_id=848864803]
+stream = ExtResource("14_g7bia")
+
 [connection signal="player_won" from="Player" to="." method="_on_player_player_won"]
 [connection signal="pressed" from="CanvasLayer/Panel/Redo" to="." method="_on_redo_pressed"]
 [connection signal="pressed" from="CanvasLayer/Panel/Home" to="." method="_on_home_pressed"]
 [connection signal="finished" from="bgmusic" to="." method="_on_bgmusic_finished"]
 [connection signal="pressed" from="home/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="finished" from="Click" to="." method="_on_click_finished"]
