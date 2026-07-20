@@ -11,12 +11,19 @@ Spacebar- Jump
 
 
 <h1>Updates since last time:</h1>
-Made character guy symetrical, although kept flipping him each time cuz otherwise transition would look kinda weird<br>
-Made levels selection screen much nicer<br>
-Fixed level selection screen weird ratio<br>
-Added level 3<br>
-Added portals in level 3<br>
-Added updating camera limits based on character position<br>
+Optimised game for web, <br>
+Custom icon<br>
+Added sound effects,<br>
+Fixed logic for level2 redo button,<br>
+Added background music for all levels<br>
+Level touch ups,<br>
+Added trail and explosion effects,<br>
+More organised code logic,<br>
+Added go to home button in levels,<br>
+Added pause button and resume panel,<br>
+Added volume toggle button,<br>
+Finish line custom explosion,<br>
+Added level 4 which is all previous levels combined<br>
 And much more! (I think)<br>
 Demo game:
 game available on web on:https://insertnewusernamehere.itch.io/magnetic
@@ -24,3 +31,11 @@ game available on web on:https://insertnewusernamehere.itch.io/magnetic
 Screenshots:
 <img width="1146" height="642" alt="Screenshot 2026-07-10 101232" src="https://github.com/user-attachments/assets/5a10cc42-77cb-4591-b70a-f91d362c7c89" />
 <img width="1522" height="671" alt="Screenshot 2026-07-10 100858" src="https://github.com/user-attachments/assets/7d68c9ea-5aa2-4e06-9747-1bd465bee256" />
+
+
+Credits (that I can think of so far)
+Background music:
+	https://www.newgrounds.com/audio/listen/114938
+	https://www.newgrounds.com/audio/listen/553839
+	https://www.newgrounds.com/audio/listen/584131
+	https://www.newgrounds.com/audio/listen/290504
