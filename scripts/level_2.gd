@@ -1,7 +1,7 @@
 extends Node2D
 @onready var bgmusic: AudioStreamPlayer = $bgmusic
 var clicktype = 0
-@onready var click: AudioStreamPlayer2D = $Click
+@onready var click: AudioStreamPlayer = $Click
 @onready var panel: Panel = $home/Panel
 
 # Called when the node enters the scene tree for the first time.

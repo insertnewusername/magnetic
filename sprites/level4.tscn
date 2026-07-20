@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://di0focrc5l08h" path="res://assets/Redo.png" id="10_1duel"]
 [ext_resource type="Texture2D" uid="uid://mb1uh6rivabu" path="res://assets/Home (2).png" id="11_fcjqe"]
 [ext_resource type="PackedScene" uid="uid://bl1vym7uvdpk1" path="res://sprites/fade_transition.tscn" id="12_621ky"]
-[ext_resource type="AudioStream" uid="uid://cmbctt2gwbh5j" path="res://assets/level1.mp3" id="13_ny4e6"]
+[ext_resource type="AudioStream" uid="uid://c24clhl3rdipa" path="res://assets/level4bgmusic.mp3" id="14_vebwy"]
 [ext_resource type="Texture2D" uid="uid://iv32xdqxbwuf" path="res://assets/Pause.png" id="14_w5i74"]
 [ext_resource type="Texture2D" uid="uid://7idj6p87egla" path="res://assets/Volume.png" id="15_k6gs0"]
 [ext_resource type="Texture2D" uid="uid://dtiu2dgehk6ep" path="res://assets/Resume.png" id="16_4k1s7"]
@@ -2364,8 +2364,8 @@ grow_horizontal = 1
 grow_vertical = 1
 
 [node name="bgmusic" type="AudioStreamPlayer" parent="." unique_id=196635174]
-stream = ExtResource("13_ny4e6")
-volume_db = -12.0
+stream = ExtResource("14_vebwy")
+volume_db = 2.109
 
 [node name="home" type="CanvasLayer" parent="." unique_id=26446016]
 
@@ -2497,34 +2497,30 @@ texture_focused = ExtResource("16_4k1s7")
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Click" type="AudioStreamPlayer2D" parent="." unique_id=848864803]
+[node name="Click" type="AudioStreamPlayer" parent="." unique_id=210337846]
 stream = ExtResource("17_ky5od")
 
 [node name="Level3" type="Node2D" parent="." unique_id=411575901]
 position = Vector2(14692, 16)
 
 [node name="Cameralimitdetect3" parent="Level3" unique_id=1631525691 instance=ExtResource("19_1duel")]
-visible = false
 position = Vector2(-100.05469, 387)
 rotation = -3.1415925
 scale = Vector2(10.236252, 11.467551)
 script = ExtResource("24_w5i74")
 
 [node name="Cameralimitdetect2" parent="Level3" unique_id=2103252421 instance=ExtResource("19_1duel")]
-visible = false
 position = Vector2(5204.946, -112.00001)
 rotation = -3.1415925
 scale = Vector2(13.276252, 11.587551)
 script = ExtResource("20_fcjqe")
 
 [node name="Cameralimitdetect" parent="Level3" unique_id=1440185229 instance=ExtResource("19_1duel")]
-visible = false
 position = Vector2(2979.9458, 778)
 rotation = 3.1415927
 scale = Vector2(10.236252, 11.467551)
 
 [node name="Finishline" parent="Level3" unique_id=1011236492 instance=ExtResource("3_7e0pg")]
-visible = false
 position = Vector2(6337.9453, 229)
 scale = Vector2(0.32709277, 0.36743712)
 

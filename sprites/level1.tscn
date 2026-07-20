@@ -1171,7 +1171,7 @@ texture_focused = ExtResource("15_6pr8d")
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Click" type="AudioStreamPlayer2D" parent="." unique_id=848864803]
+[node name="Click" type="AudioStreamPlayer" parent="." unique_id=1197781537]
 stream = ExtResource("14_g7bia")
 
 [connection signal="player_won" from="Player" to="." method="_on_player_player_won"]

@@ -1,7 +1,7 @@
 extends Node2D
 @onready var Fade_transition: ColorRect = $Fade_transition
 @onready var bgmusic: AudioStreamPlayer = $bgmusic
-@onready var click: AudioStreamPlayer2D = $Click
+@onready var click: AudioStreamPlayer = $Click
 @onready var panel: Panel = $home/Panel
 
 var clicktype = 0

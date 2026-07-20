@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://dtiu2dgehk6ep" path="res://assets/Resume.png" id="14_2fnsr"]
 [ext_resource type="Texture2D" uid="uid://7idj6p87egla" path="res://assets/Volume.png" id="15_2fnsr"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_57g6u"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2fnsr"]
 texture = ExtResource("6_jg10s")
 0:0/0 = 0
 1:0/0 = 0
@@ -88,7 +88,7 @@ texture = ExtResource("6_jg10s")
 
 [sub_resource type="TileSet" id="TileSet_ey6f8"]
 physics_layer_0/collision_layer = 1
-sources/2 = SubResource("TileSetAtlasSource_57g6u")
+sources/2 = SubResource("TileSetAtlasSource_2fnsr")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vqhb7"]
 bg_color = Color(0.2505318, 0.32867303, 0.4114647, 1)
@@ -841,7 +841,6 @@ texture_disabled = SubResource("CompressedTexture2D_o2h5n")
 texture_focused = SubResource("CompressedTexture2D_2fnsr")
 ignore_texture_size = true
 stretch_mode = 4
-metadata/_edit_use_anchors_ = true
 
 [node name="TextureButton2" type="TextureButton" parent="home" unique_id=1681766730]
 anchors_preset = -1
@@ -859,7 +858,6 @@ texture_disabled = ExtResource("13_o2h5n")
 texture_focused = ExtResource("13_o2h5n")
 ignore_texture_size = true
 stretch_mode = 4
-metadata/_edit_use_anchors_ = true
 
 [node name="Mute" type="TextureButton" parent="home" unique_id=1479505011]
 anchors_preset = -1
@@ -881,7 +879,6 @@ texture_disabled = ExtResource("15_2fnsr")
 texture_focused = ExtResource("15_2fnsr")
 ignore_texture_size = true
 stretch_mode = 4
-metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="home" unique_id=670645888]
 anchors_preset = 8
@@ -936,7 +933,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 50
 text = "Resume"
-metadata/_edit_use_anchors_ = true
 
 [node name="resumebutton" type="TextureButton" parent="home/Panel" unique_id=502193759]
 layout_mode = 0
@@ -952,7 +948,7 @@ texture_focused = ExtResource("14_2fnsr")
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Click" type="AudioStreamPlayer2D" parent="." unique_id=404775939]
+[node name="Click" type="AudioStreamPlayer" parent="." unique_id=1625872822]
 stream = ExtResource("13_ea1qv")
 
 [connection signal="player_won" from="Player" to="." method="_on_player_player_won"]
