@@ -788,6 +788,7 @@ grow_vertical = 1
 
 [node name="bgmusic" type="AudioStreamPlayer" parent="." unique_id=1596964488]
 stream = ExtResource("12_uscw5")
+volume_db = -15.0
 
 [connection signal="player_won" from="Player" to="." method="_on_player_player_won"]
 [connection signal="pressed" from="CanvasLayer/Panel/Redo" to="." method="_on_redo_pressed"]
