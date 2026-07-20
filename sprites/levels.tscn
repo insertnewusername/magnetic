@@ -287,24 +287,6 @@ theme_override_fonts/font = ExtResource("3_v1837")
 theme_override_font_sizes/font_size = 32
 text = "LEVELS"
 
-[node name="Node2D" type="Node2D" parent="." unique_id=1789745542]
-script = ExtResource("1_hq8kx")
-
-[node name="Fade_transition" parent="Node2D" unique_id=678732442 instance=ExtResource("2_dlk6t")]
-visible = false
-offset_left = -1378.0
-offset_top = -845.0
-offset_right = 3105.0
-offset_bottom = 1896.0
-
-[node name="fade_timer" type="Timer" parent="Node2D/Fade_transition" unique_id=1847753979]
-
-[node name="Bgmusic" type="AudioStreamPlayer2D" parent="Node2D" unique_id=11858213]
-stream = ExtResource("6_ljr8u")
-
-[node name="Click" type="AudioStreamPlayer2D" parent="." unique_id=1831820962]
-stream = ExtResource("7_0owga")
-
 [node name="Panel5" type="Panel" parent="." unique_id=1634349589]
 layout_mode = 1
 anchors_preset = -1
@@ -365,13 +347,33 @@ offset_bottom = 38.25
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("4_ljr8u")
-text = "1+2+3=4"
+text = "1+2+3=4? This 
+one may take
+a while..."
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1789745542]
+script = ExtResource("1_hq8kx")
+
+[node name="Fade_transition" parent="Node2D" unique_id=678732442 instance=ExtResource("2_dlk6t")]
+visible = false
+offset_left = -1378.0
+offset_top = -845.0
+offset_right = 3105.0
+offset_bottom = 1896.0
+
+[node name="fade_timer" type="Timer" parent="Node2D/Fade_transition" unique_id=1847753979]
+
+[node name="Bgmusic" type="AudioStreamPlayer2D" parent="Node2D" unique_id=11858213]
+stream = ExtResource("6_ljr8u")
+
+[node name="Click" type="AudioStreamPlayer2D" parent="." unique_id=1831820962]
+stream = ExtResource("7_0owga")
 
 [connection signal="pressed" from="Panel/Level1" to="Node2D" method="_on_start_pressed"]
 [connection signal="pressed" from="Panel/Level1" to="Node2D" method="_on_level_1_pressed"]
 [connection signal="pressed" from="Panel2/Level2" to="Node2D" method="_on_level_2_pressed"]
 [connection signal="pressed" from="Panel3/Level3" to="Node2D" method="_on_level_3_pressed"]
+[connection signal="pressed" from="Panel5/Level4" to="Node2D" method="_on_level_4_pressed"]
 [connection signal="timeout" from="Node2D/Fade_transition/fade_timer" to="Node2D" method="_on_fade_timer_timeout"]
 [connection signal="finished" from="Node2D/Bgmusic" to="Node2D" method="_on_bgmusic_finished"]
 [connection signal="finished" from="Click" to="Node2D" method="_on_click_finished"]
-[connection signal="pressed" from="Panel5/Level4" to="Node2D" method="_on_level_4_pressed"]
