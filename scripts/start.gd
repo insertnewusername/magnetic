@@ -1,10 +1,11 @@
 extends Control
 @onready var click: AudioStreamPlayer2D = $Click
+@onready var bgmusic: AudioStreamPlayer2D = $Bgmusic
 
 var button_type = null
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	bgmusic.play()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,3 +26,7 @@ func _on_timer_timeout() -> void:
 		$Fade_transition.hide()
 		
 		
+
+
+func _on_bgmusic_finished() -> void:
+	bgmusic.play()

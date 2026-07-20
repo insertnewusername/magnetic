@@ -1,8 +1,11 @@
 extends Node2D
 @onready var click: AudioStreamPlayer2D = $"../Click"
+@onready var bgmusic: AudioStreamPlayer2D = $Bgmusic
+
 var button_type = null
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	bgmusic.play()
 	$Fade_transition.show()
 	$Fade_transition/AnimationPlayer.play("fade_in")
 	await get_tree().create_timer(1.0).timeout
@@ -52,3 +55,10 @@ func _on_fade_timer_timeout() -> void:
 		
 	elif button_type == "level3" :
 		get_tree().change_scene_to_file("res://sprites/level3.tscn")
+
+
+
+
+
+func _on_bgmusic_finished() -> void:
+	bgmusic.play()
