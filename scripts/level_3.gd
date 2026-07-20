@@ -1,8 +1,9 @@
 extends Node2D
 @onready var Fade_transition: ColorRect = $Fade_transition
 @onready var bgmusic: AudioStreamPlayer = $bgmusic
+@onready var click: AudioStreamPlayer2D = $Click
 
-
+var clicktype = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -31,7 +32,8 @@ func _on_player_player_won() -> void:
 
 
 func _on_home_pressed() -> void:
-	get_tree().change_scene_to_file("res://sprites/levels.tscn")
+	clicktype = 1
+	click.play()
 
 
 
@@ -40,8 +42,8 @@ func _on_home_pressed() -> void:
 
 
 func _on_redo_pressed() -> void:
-	var current_scene = get_tree().current_scene
-	get_tree().change_scene_to_file(current_scene.scene_file_path)
+	clicktype = 2
+	click.play()
 
 
 func _on_bgmusic_finished() -> void:
@@ -49,4 +51,14 @@ func _on_bgmusic_finished() -> void:
 
 
 func _on_texture_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://sprites/levels.tscn")
+	clicktype = 1
+	click.play()
+	
+
+
+func _on_click_finished() -> void:
+	if clicktype == 1:
+		get_tree().change_scene_to_file("res://sprites/levels.tscn")
+	elif clicktype == 2:
+		var current_scene = get_tree().current_scene
+		get_tree().change_scene_to_file(current_scene.scene_file_path)
