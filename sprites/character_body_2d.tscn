@@ -31,8 +31,14 @@ shape = SubResource("RectangleShape2D_svgyj")
 position = Vector2(22, 32)
 emitting = false
 amount = 40
-lifetime = 0.8
+lifetime = 0.6
 one_shot = true
+explosiveness = 0.71
 process_material = SubResource("ParticleProcessMaterial_g1ldd")
 
+[node name="Timer" type="Timer" parent="Deathexplosion" unique_id=1494509512]
+wait_time = 0.6
+one_shot = true
+
 [connection signal="finished" from="Deathexplosion" to="." method="_on_deathexplosion_finished"]
+[connection signal="timeout" from="Deathexplosion/Timer" to="." method="_on_timer_timeout"]

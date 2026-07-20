@@ -9,9 +9,10 @@ var flip_timer := 0.0
 var respawn_x = -57.0
 var respawn_y = 440.0
 var has_won := false
+var is_dead := false
 
 func _physics_process(delta: float) -> void:
-	if has_won:
+	if has_won or is_dead:
 		return
 	# Cooldown
 	if flip_timer > 0:
@@ -50,7 +51,10 @@ func jump():
 		
 		
 func die():
-	deathexplosion.emitting = true
+	if is_dead == false:
+		is_dead = true
+		deathexplosion.emitting = true
+		$Deathexplosion/Timer.start()
 	
 func win():
 	print("Player won")
@@ -60,15 +64,19 @@ func win():
 func teleport():
 	print("playerteleporting")
 	global_position = Vector2(777, 43)
-	
-	
 
 
-func _on_deathexplosion_finished() -> void:
+
+
+func _on_timer_timeout() -> void:
+	print("timeout")
 	if has_won:
+		return
+	if is_dead == false:
 		return
 	gravity_dir = 1
 	velocity.y = 0
 	scale.y = 1
+	is_dead = false
 	global_position = Vector2(respawn_x, respawn_y)
 	print("Player died")
