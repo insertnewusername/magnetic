@@ -6,6 +6,28 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bt3yw"]
 size = Vector2(120, 1324)
 
+[sub_resource type="Curve" id="Curve_7uqs6"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_rv2rw"]
+curve = SubResource("Curve_7uqs6")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ke2h2"]
+particle_flag_disable_z = true
+spread = 90.0
+initial_velocity_min = 150.0
+initial_velocity_max = 300.0
+angular_velocity_min = 149.99998
+angular_velocity_max = 359.99997
+gravity = Vector3(0, 0, 0)
+scale_min = 10.0
+scale_max = 14.0
+scale_curve = SubResource("CurveTexture_rv2rw")
+color = Color(0.4392157, 1, 1, 1)
+hue_variation_min = -2.2351742e-08
+hue_variation_max = 0.19999997
+
 [node name="Finishline" type="Area2D" unique_id=1011236492]
 script = ExtResource("1_bt3yw")
 
@@ -16,5 +38,15 @@ texture = ExtResource("1_yp4eo")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=430795945]
 position = Vector2(-21, 28)
 shape = SubResource("RectangleShape2D_bt3yw")
+
+[node name="Finishexplosion" type="GPUParticles2D" parent="." unique_id=73146280]
+position = Vector2(-76, 1)
+rotation = 3.1415927
+emitting = false
+amount = 80
+lifetime = 2.0
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_ke2h2")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

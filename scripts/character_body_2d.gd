@@ -60,7 +60,7 @@ func win():
 	print("Player won")
 	emit_signal("player_won")
 	has_won = true
-	
+
 func teleport():
 	print("playerteleporting")
 	global_position = Vector2(777, 43)
