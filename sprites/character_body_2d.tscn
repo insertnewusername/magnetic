@@ -15,6 +15,17 @@ gravity = Vector3(0, 98, 0)
 scale_min = 5.0
 scale_max = 15.0
 
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_hq23e"]
+particle_flag_disable_z = true
+angle_min = 1.0728835e-05
+angle_max = 1.0728835e-05
+spread = 13.762
+initial_velocity_min = 20.0
+initial_velocity_max = 50.0
+gravity = Vector3(0, 0, 0)
+scale_min = 3.0
+scale_max = 3.0
+
 [node name="Player" type="CharacterBody2D" unique_id=1289974708]
 script = ExtResource("1_1scg8")
 
@@ -39,6 +50,12 @@ process_material = SubResource("ParticleProcessMaterial_g1ldd")
 [node name="Timer" type="Timer" parent="Deathexplosion" unique_id=1494509512]
 wait_time = 0.6
 one_shot = true
+
+[node name="trail" type="GPUParticles2D" parent="." unique_id=154955820]
+position = Vector2(7, 47)
+rotation = 3.1415927
+amount = 30
+process_material = SubResource("ParticleProcessMaterial_hq23e")
 
 [connection signal="finished" from="Deathexplosion" to="." method="_on_deathexplosion_finished"]
 [connection signal="timeout" from="Deathexplosion/Timer" to="." method="_on_timer_timeout"]
