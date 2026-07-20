@@ -80,3 +80,8 @@ func _on_resumebutton_pressed() -> void:
 	click.play()
 	get_tree().paused = false
 	panel.hide()
+
+
+func _on_mute_toggled(toggled_on: bool) -> void:
+	var master_bus_index = AudioServer.get_bus_index("Master")
+	AudioServer.set_bus_mute(master_bus_index, toggled_on)

@@ -15,6 +15,7 @@
 [ext_resource type="AudioStream" uid="uid://c500dsgxjwvv" path="res://assets/mouseclick.wav" id="13_ea1qv"]
 [ext_resource type="Texture2D" uid="uid://iv32xdqxbwuf" path="res://assets/Pause.png" id="13_o2h5n"]
 [ext_resource type="Texture2D" uid="uid://dtiu2dgehk6ep" path="res://assets/Resume.png" id="14_2fnsr"]
+[ext_resource type="Texture2D" uid="uid://7idj6p87egla" path="res://assets/Volume.png" id="15_2fnsr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_57g6u"]
 texture = ExtResource("6_jg10s")
@@ -860,6 +861,28 @@ ignore_texture_size = true
 stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
+[node name="Mute" type="TextureButton" parent="home" unique_id=1479505011]
+anchors_preset = -1
+anchor_right = 1.6526667
+anchor_bottom = 2.9347656
+offset_left = 131.0
+offset_top = 5.0
+offset_right = -1721.8721
+offset_bottom = -1846.7281
+size_flags_horizontal = 4
+toggle_mode = true
+action_mode = 0
+shortcut_feedback = false
+shortcut_in_tooltip = false
+texture_normal = ExtResource("15_2fnsr")
+texture_pressed = ExtResource("15_2fnsr")
+texture_hover = ExtResource("15_2fnsr")
+texture_disabled = ExtResource("15_2fnsr")
+texture_focused = ExtResource("15_2fnsr")
+ignore_texture_size = true
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
 [node name="Panel" type="Panel" parent="home" unique_id=670645888]
 anchors_preset = 8
 anchor_left = 0.5
@@ -938,5 +961,6 @@ stream = ExtResource("13_ea1qv")
 [connection signal="finished" from="bgmusic" to="." method="_on_bgmusic_finished"]
 [connection signal="pressed" from="home/TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="home/TextureButton2" to="." method="_on_texture_button_2_pressed"]
+[connection signal="toggled" from="home/Mute" to="." method="_on_mute_toggled"]
 [connection signal="pressed" from="home/Panel/resumebutton" to="." method="_on_resumebutton_pressed"]
 [connection signal="finished" from="Click" to="." method="_on_click_finished"]
