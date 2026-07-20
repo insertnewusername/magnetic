@@ -18,7 +18,6 @@
 [ext_resource type="Texture2D" uid="uid://7idj6p87egla" path="res://assets/Volume.png" id="15_k6gs0"]
 [ext_resource type="Texture2D" uid="uid://dtiu2dgehk6ep" path="res://assets/Resume.png" id="16_4k1s7"]
 [ext_resource type="AudioStream" uid="uid://c500dsgxjwvv" path="res://assets/mouseclick.wav" id="17_ky5od"]
-[ext_resource type="Script" uid="uid://c1r1ntm2iy5vp" path="res://scripts/level_3.gd" id="18_0o0kb"]
 [ext_resource type="PackedScene" uid="uid://dh2q31nxybsjs" path="res://sprites/bump.tscn" id="18_qdles"]
 [ext_resource type="PackedScene" uid="uid://1kjmuju5ptgf" path="res://sprites/changecameralimitzone.tscn" id="19_1duel"]
 [ext_resource type="Script" uid="uid://dcy8541j243x4" path="res://scripts/changecameralimitzone2.gd" id="20_fcjqe"]
@@ -708,10 +707,10 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(-57, 444)
 
 [node name="Camera2D3" type="Camera2D" parent="Player" unique_id=72801524]
-limit_left = -96
-limit_top = 0
-limit_right = 13953
-limit_bottom = 513
+limit_left = 18245
+limit_top = -561
+limit_right = 20072
+limit_bottom = 113
 script = ExtResource("4_vebwy")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1197701037]
@@ -2502,7 +2501,6 @@ stream = ExtResource("17_ky5od")
 
 [node name="Level3" type="Node2D" parent="." unique_id=411575901]
 position = Vector2(14692, 16)
-script = ExtResource("18_0o0kb")
 
 [node name="Cameralimitdetect3" parent="Level3" unique_id=1631525691 instance=ExtResource("19_1duel")]
 position = Vector2(-100.05469, 387)
