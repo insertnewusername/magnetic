@@ -752,7 +752,7 @@ rotation = -3.1415927
 scale = Vector2(0.31632763, 0.31632763)
 
 [node name="Area2D6" parent="Node2D/Jump_pads" unique_id=791108346 instance=ExtResource("18_qdles")]
-position = Vector2(6714.608, 34.000004)
+position = Vector2(6689.608, 34)
 rotation = -3.1415927
 scale = Vector2(0.31632763, 0.31632763)
 
@@ -1975,7 +1975,7 @@ position = Vector2(17965.945, 476)
 scale = Vector2(0.06640514, 0.06640514)
 
 [node name="Spike270" parent="Spikes" unique_id=1227388067 instance=ExtResource("8_vebwy")]
-position = Vector2(17029.945, 875)
+position = Vector2(17008, 874)
 scale = Vector2(0.06640514, 0.06640514)
 
 [node name="Spike271" parent="Spikes" unique_id=282207452 instance=ExtResource("8_vebwy")]
@@ -2051,7 +2051,7 @@ rotation = 3.1415925
 scale = Vector2(0.06640514, 0.06640514)
 
 [node name="Spike287" parent="Spikes" unique_id=2123936492 instance=ExtResource("8_vebwy")]
-position = Vector2(17003.945, 875)
+position = Vector2(16982, 874)
 scale = Vector2(0.06640514, 0.06640514)
 
 [node name="Spike288" parent="Spikes" unique_id=255466325 instance=ExtResource("8_vebwy")]
@@ -2077,7 +2077,7 @@ position = Vector2(17566.945, 876)
 scale = Vector2(0.06640514, 0.06640514)
 
 [node name="Spike293" parent="Spikes" unique_id=2030118575 instance=ExtResource("8_vebwy")]
-position = Vector2(17111.945, 741.00006)
+position = Vector2(17106, 741)
 rotation = 3.1415925
 scale = Vector2(0.06640514, 0.06640514)
 
@@ -2368,7 +2368,6 @@ stream = ExtResource("13_ny4e6")
 volume_db = -12.0
 
 [node name="home" type="CanvasLayer" parent="." unique_id=26446016]
-visible = false
 
 [node name="TextureButton" type="TextureButton" parent="home" unique_id=1177423733]
 anchors_preset = -1
@@ -2429,6 +2428,7 @@ stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="home" unique_id=1826137436]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -2504,23 +2504,27 @@ stream = ExtResource("17_ky5od")
 position = Vector2(14692, 16)
 
 [node name="Cameralimitdetect3" parent="Level3" unique_id=1631525691 instance=ExtResource("19_1duel")]
+visible = false
 position = Vector2(-100.05469, 387)
 rotation = -3.1415925
 scale = Vector2(10.236252, 11.467551)
 script = ExtResource("24_w5i74")
 
 [node name="Cameralimitdetect2" parent="Level3" unique_id=2103252421 instance=ExtResource("19_1duel")]
+visible = false
 position = Vector2(5204.946, -112.00001)
 rotation = -3.1415925
 scale = Vector2(13.276252, 11.587551)
 script = ExtResource("20_fcjqe")
 
 [node name="Cameralimitdetect" parent="Level3" unique_id=1440185229 instance=ExtResource("19_1duel")]
+visible = false
 position = Vector2(2979.9458, 778)
 rotation = 3.1415927
 scale = Vector2(10.236252, 11.467551)
 
 [node name="Finishline" parent="Level3" unique_id=1011236492 instance=ExtResource("3_7e0pg")]
+visible = false
 position = Vector2(6337.9453, 229)
 scale = Vector2(0.32709277, 0.36743712)
 
@@ -2540,7 +2544,7 @@ position = Vector2(1351, 429.00003)
 scale = Vector2(0.31632763, 0.31632763)
 
 [node name="Area2D2" parent="Level3/Jump_pads" unique_id=1472927178 instance=ExtResource("18_qdles")]
-position = Vector2(488.00003, 300.00003)
+position = Vector2(481.05472, 300)
 scale = Vector2(0.31632763, 0.31632763)
 
 [node name="Area2D3" parent="Level3/Jump_pads" unique_id=585245753 instance=ExtResource("18_qdles")]
